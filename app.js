@@ -1,26 +1,25 @@
-const title = React.createElement(
-  'h1',
-  {id: 'main-title', 
-   title: 'This is a title.'},
-   'My First React element'
+
+
+
+const desc = <p> I just learned how to create a React nodr and render it into </p>;
+const myTitlteId = 'main-title';
+const name = 'Guil';
+
+	
+
+
+const header = (
+<header> 
+	<h1 id={title}> {name}'s Firs React elemt ' </h1>
+	<p> {desc} </p>
+</header>
+
 );
-
-const desc = React.createElement(
-'p',
- null,
- 'Just lern how to cereate a React node and render'
-); 
-
-
-const header = React.createElement(
-'header',
- null,
- title,
- desc
-); 
-
 
 ReactDOM.render(
  header,
  document.getElementById('root')
 );
+
+
+
